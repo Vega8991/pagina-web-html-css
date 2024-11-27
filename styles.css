@@ -14,8 +14,8 @@ input {
   background-color: rgb(213, 195, 231);
   margin: 10px;
   border-radius: 7px;
-  width: 80%;
-  padding: 10px;
+  width: 20%;
+  padding: 6px;
   font-size: 1.2rem;
   box-sizing: border-box;
 }
@@ -28,21 +28,24 @@ h1 {
 textarea {
   border-radius: 10px;
   font-size: 17px;
-  width: 80%;
+  width: 40%;
   box-sizing: border-box;
 }
 
 button {
-  font-size: 20px;
+  font-size: 35px;
   font-family: Arial;
-  color: rgb(0, 0, 0);
-  background-color: rgb(140, 75, 174);
+  font-weight: bold;
+  color: rgb(130, 59, 223);
+  background-color: rgb(208, 121, 255);
   border-radius: 6px;
-  transition: 0.3s;
+  transition: 0.7s;
+  width: 30%;
+  height: 60px;
 }
 
 button:hover {
-  background-color: #d77dfa;
+  background-color: #9044e7;
 }
 
 fieldset p {
@@ -52,7 +55,23 @@ fieldset p {
 .genero {
   display: flex;
   margin-bottom: 20px;
-  gap: 20px;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  font-weight: bold;
+  gap: 60px;
+}
+
+.fecha-nacimiento label {
+  margin-bottom: 10px;
+}
+
+.terminos input {
+  width: 30px;
+}
+
+.genero input[type="radio"] {
+  display: none;
 }
 
 .genero label {
@@ -61,8 +80,14 @@ fieldset p {
   border-radius: 7px;
   cursor: pointer;
   justify-content: center;
+  padding: 5px 10px;
+  background-color: rgb(213, 195, 231);
+  transition: background-color 0.5s;
+  width: 20%;
+  height: 30px;
 }
 
-.fecha-nacimiento label{
-    margin-bottom: 10px;
+.genero input[type="radio"]:checked+label {
+  background-color: rgb(130, 59, 223);
+  color: rgb(255, 255, 255);
 }
