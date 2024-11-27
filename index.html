@@ -20,6 +20,9 @@
             <br />
             <label for="apellidos"> Apellidos: </label>
             <input type="text" id="apellidos" name="apellidos" required />
+            <br>
+            <label for="dni"> DNI:</label>
+            <input type="text" id="dni" name="dni" required>
             <br />
             <div class="fecha-nacimiento">
                 <label for="fecha-nacimiento"> Fecha de nacimiento: </label>
@@ -48,17 +51,24 @@
             <input type="tel" id="telefono" name="telefono" placeholder="000-000-000" pattern="[0-9]{9}" />
             <br />
             <label for="direccion"> Direccion: </label>
-            <textarea id="direccion" name="direccion" rows="4" placeholder="Ciudad, calle, codigo postal"></textarea>
+            <input id="direccion" name="direccion">
+            <label for="postal"> Codigo postal:</label>
+            <input type="text" id="postal" name="postal" required>
+            <br>
+            <label for="localidad"> Localidad:</label>
+            <input type="text" id="localidad" name="localidad" required>
+            <label for="provincia"> Provincia:</label>
+            <input type="text" id="provincia" name="provincia" required>
         </fieldset>
         <fieldset class="fieldset-ejemplo">
             <legend>Informacion De Cuenta</legend>
             <label for="usuario">Usuario:</label>
             <input type="text" id="usuario" name="usuario" required />
             <br />
-            <label for="clave">Clave</label>
+            <label for="clave">Clave:</label>
             <input type="password" id="clave" name="clave" required />
             <br />
-            <label for="clave"> Confirmar clave</label>
+            <label for="clave"> Confirmar clave:</label>
             <input type="password" id="conf-clave" name="conf-clave" required />
         </fieldset>
         <fieldset>
