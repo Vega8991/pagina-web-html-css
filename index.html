@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Formulario</title>
+</head>
+<link rel="stylesheet" href="styles.css">
+<body>
+    <center>
+        <h1>Registro de Usuario</h1>
+    </center>
+    <form>
+        <fieldset>
+            <legend>Informacion Personal</legend>
+            <label for="nombre"> Nombre: </label>
+            <input type="text" id="nombre" name="nombre" required />
+            <br />
+            <label for="apellidos"> Apellidos: </label>
+            <input type="text" id="apellidos" name="apellidos" required />
+            <br />
+            <div class="fecha-nacimiento">
+            <label for="fecha-nacimiento"> Fecha de nacimiento: </label>
+            <input type="date" id="fecha-nacimiento" name="fecha-nacimiento" required />
+            </div>
+            <br />
+            
+            <p>Género</p>
+            <div class="genero">
+            <label for="masculino"> Masculino </label>
+            <input type="radio" id="masculino" name="genero" value="masculino" required />
+            <label for="femenino"> Femenino </label>
+            <input type="radio" id="femenino" name="genero" value="femenino" required />
+            <label for="otro"> Otro </label>
+            <input type="radio" id="otro" name="genero" value="otro" required />
+            </div>
+            
+        </fieldset>
+        <fieldset>
+            <legend>Informacion De Contacto</legend>
+            <label for="correo"> Correo:</label>
+            <input type="email" id="email" name="email" placeholder="ejemplo@gmail.com" />
+            <br />
+            <label for="telefono"> Telefono: </label>
+            <input type="tel" id="telefono" name="telefono" placeholder="000-000-000" pattern="[0-9]{9}"/>
+            <br />
+            <label for="direccion"> Direccion: </label>
+            <textarea id="direccion" name="direccion" rows="4" placeholder="Ciudad, calle, codigo postal"></textarea>
+        </fieldset>
+        <fieldset class="fieldset-ejemplo">
+            <legend>Informacion De Cuenta</legend>
+            <label for="usuario">Usuario:</label>
+            <input type="text" id="usuario" name="usuario" required />
+            <br />
+            <label for="clave">Clave</label>
+            <input type="password" id="clave" name="clave" required />
+            <br />
+            <label for="clave"> Confirmar clave</label>
+            <input type="password" id="clave" name="clave" required />
+        </fieldset>
+        <fieldset>
+            <center>
+        <div>
+            <label for="terminos"> Aceptar los terminos y condiciones</label>
+            <input type="checkbox" id="terminos" name="terminos" required>
+        </div>
+        </center>
+        <center>
+        <button type="submit"> Registrarse</button>
+        </center>
+    </fieldset>
+    </form>
+</body>
+
+</html>

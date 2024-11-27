@@ -1,0 +1,68 @@
+body {
+  background-image: url("Imagen.jpg");
+  background-size: cover;
+  font-family: Verdana;
+  color: white;
+}
+
+fieldset {
+  background-color: rgba(142, 49, 219, 0.379);
+  border-radius: 20px;
+}
+
+input {
+  background-color: rgb(213, 195, 231);
+  margin: 10px;
+  border-radius: 7px;
+  width: 80%;
+  padding: 10px;
+  font-size: 1.2rem;
+  box-sizing: border-box;
+}
+
+h1 {
+  color: rgb(232, 150, 253);
+  font-size: 40px;
+}
+
+textarea {
+  border-radius: 10px;
+  font-size: 17px;
+  width: 80%;
+  box-sizing: border-box;
+}
+
+button {
+  font-size: 20px;
+  font-family: Arial;
+  color: rgb(0, 0, 0);
+  background-color: rgb(140, 75, 174);
+  border-radius: 6px;
+  transition: 0.3s;
+}
+
+button:hover {
+  background-color: #d77dfa;
+}
+
+fieldset p {
+  font-size: 1.2rem;
+}
+
+.genero {
+  display: flex;
+  margin-bottom: 20px;
+  gap: 20px;
+}
+
+.genero label {
+  font-size: 1.2rem;
+  margin-bottom: 10px;
+  border-radius: 7px;
+  cursor: pointer;
+  justify-content: center;
+}
+
+.fecha-nacimiento label{
+    margin-bottom: 10px;
+}
